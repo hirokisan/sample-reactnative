@@ -13,10 +13,14 @@ import {Platform, StyleSheet, Text, View, Dimensions} from 'react-native';
 import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
 
 import Sample from './sample';
+import FirstRoute from './first';
 
-const FirstRoute = () => (
-  <View style={[styles.container, { backgroundColor: '#ff4081' }]} />
-);
+//const FirstRoute = () => (
+//  <View style={[styles.container, { backgroundColor: '#ff4081' }]}>
+//		<TEXT>{this.props.name}</TEXT>
+//  <View>
+//);
+
 const SecondRoute = () => (
   <View style={[styles.container, { backgroundColor: '#673ab7' }]} />
 );
@@ -45,7 +49,7 @@ export default class App extends Component<Props> {
 				renderScene = {({ route }) => {
 					switch (route.key) {
 						case 'first':
-							return <FirstRoute name="Nice job"/>;
+							return <FirstRoute name='Nice job' />;
 						case 'second':
 							return <SecondRoute />;
 						case 'third':
