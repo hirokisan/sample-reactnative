@@ -3,9 +3,11 @@ import {Platform, StyleSheet, Text, View} from 'react-native';
 
 export default class Sample extends Component {
   render() {
+    let word = 'Welcome to React Native!';
+
     return (
       <View style={styles.container}>
-      <Text style={styles.welcome}>Welcome to React Native!</Text>
+      <Text style={styles.welcome}>{word}</Text>
       <Text style={styles.instructions}>To get started, edit App.js</Text>
       </View>
     );

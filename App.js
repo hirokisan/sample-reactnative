@@ -37,11 +37,23 @@ export default class App extends Component<Props> {
     return (
       <TabView
         navigationState={this.state}
-        renderScene={SceneMap({
-          first: FirstRoute,
-          second: SecondRoute,
-          third: Sample,
-        })}
+        //renderScene={SceneMap({
+        //  first: FirstRoute,
+        //  second: SecondRoute,
+        //  third: Sample,
+        //})}
+				renderScene = {({ route }) => {
+					switch (route.key) {
+						case 'first':
+							return <FirstRoute name="Nice job"/>;
+						case 'second':
+							return <SecondRoute />;
+						case 'third':
+							return <Sample />;
+						default:
+							return null;
+					}
+				}}
         onIndexChange={index => this.setState({ index })}
         initialLayout={{ width: Dimensions.get('window').width }}
       />

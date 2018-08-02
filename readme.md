@@ -13,6 +13,11 @@ $ react-native run-ios
 $ react-native run-ios --simulator="iPhone X"
 ```
 
+## DEBUG LOG
+```
+$ react-native log-ios
+```
+
 ## Library
 * [leecade/react-native-swiper](https://github.com/leecade/react-native-swiper)
 * [happypancake/react-native-scrollable-tab-view](https://github.com/happypancake/react-native-scrollable-tab-view)
