@@ -13,6 +13,11 @@ $ react-native run-ios
 $ react-native run-ios --simulator="iPhone X"
 ```
 
+## Install Debug tool
+```
+$ brew cask install reactotron
+```
+
 ## DEBUG LOG
 ```
 $ react-native log-ios
@@ -40,6 +45,7 @@ $ react-native log-ios
 * [Microsoft/react-native-code-push](https://github.com/Microsoft/react-native-code-push)
 * [GeekyAnts/NativeBase](https://github.com/GeekyAnts/NativeBase)
 * [react-native-training/react-native-elements](https://github.com/react-native-training/react-native-elements)
+* [infinitered/reactotron](https://github.com/infinitered/reactotron)
 
 ## Ref
 * [【React Native入門】Java Scriptでアプリ作ろう【Reactやったことない人向け】](https://qiita.com/YutamaKotaro/items/dd7846c6db15e2307daa)
